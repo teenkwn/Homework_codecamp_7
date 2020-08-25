@@ -1,0 +1,90 @@
+.root {
+    text-align: center;
+}
+.tooltips {
+    position: relative;
+    display: inline-block;
+}
+.tooltips .tooltips__text {
+    visibility: hidden;
+    position: absolute;
+    background-color: pink;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 5px 0;
+    top:100%;
+    width:200px;
+}
+
+.tooltips:hover .tooltips__text {
+    visibility: visible;
+}
+
+.pagination {
+    display: inline-block;
+    margin-top: 50px;
+}
+.pagination a {
+    color: black;
+    float: left;
+    text-decoration: none;
+    padding: 0 2rem;
+}
+
+
+
+.pagination .pagination__items:hover{
+    background-color: green;
+}
+
+.navigation-bar {
+    /* display: inline-block; */
+    text-align: left;
+    text-decoration: none;
+}
+
+.navigation-bar .navigation-bar__all{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+.navigation-bar .navigation-bar__all .navigation-bar__items {
+    flex-grow: 1;
+    margin: 0.5rem 0.5rem;
+    background-color: yellow;
+    padding: 1.5rem 3rem;
+    text-align: center;
+}
+
+.navigation-bar .navigation-bar__all .navigation-bar__items:hover {
+    margin: 0.5rem 0.5rem;
+    background-color: green;
+    padding: 1.5rem 3rem;
+}
+
+.navigation-bar .navigation-bar__all .navigation-bar__items .navigation-bar__items-last {
+    text-decoration: none;
+    position: relative
+
+}
+.navigation-bar__items-last .drop-down__list {
+    opacity:0;
+    position: relative;
+    top:0px;
+    left:0px;
+    background-color: black;
+    color:white;
+    transition: all .4s;
+    list-style: none;
+}
+
+.navigation-bar__items-last:hover .drop-down__list {
+    opacity:1;
+    top:100%;
+}
+
+.drop-down__list-1 {
+    position: relative;
+    
+}
